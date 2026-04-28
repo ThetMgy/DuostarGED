@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUOSTAR GED TUTORING</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container_h {
+            text-align: center;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            height: 225px;
+			width: 800px;
+        }
+        .container_b {
+		    padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 800px;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 1px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .btn {
+            display: block;
+            width: 54%;
+            padding: 15px;
+            margin: 15px 0;
+			aligh: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-primary {
+            background-color: #4285f4;
+            color: white;
+            font-size: 1.1em;
+        }
+        .btn-secondary {
+			padding: 5px;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            border: 1px solid #bdc3c7;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class = "main-wrapper">
+<div class="container container_h">
+    <img src="https://lh3.googleusercontent.com/d/1kWUg8UhPuMdTo49LaIxzyXAt30Lxmz0q" alt="Logo" class="logo">
+    <h3>WELCOME TO DUOSTAR GED TUTORING</h>
+    <p id="current-date" style="color: #666; font-weight: bold; margin-bottom: 10px;"></p>
+    </div>
+
+<div class="container container_b">
+<center>
+<br>
+    <h1> Science Practice Test </h1>
+    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdEHD8HG607Jx-0fqhYmLzChYeAQlNx-_Wyq6K8XqoydmzCUw/viewform?usp=sharing&ouid=113580234408773012590" class="btn btn-primary">START NOW</a>
+
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <a target ="_blank" href="https://ti84calc.com/ti30calc" class="btn btn-secondary">Calculator</a>
+    
+    <a target ="_blank" href="https://lh3.googleusercontent.com/d/1mnCIV3-5v_aUzEKINkZUFCk8rZvI82CE" class="btn btn-secondary">Calculator Reference Sheet</a>
+    
+	</center>
+</div>
+</div>
+<script>
+    const dateElement = document.getElementById('current-date');
+    const today = new Date();
+    
+    // This formats the date to look like: April 27, 2026
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', options);
+    
+    dateElement.textContent = formattedDate;
+</script>
+</body>
+</html>
